@@ -1,0 +1,74 @@
+#logotran {
+	margin: 33px;
+}
+.list-inline {
+	list-style: outside none none;
+
+}	
+.pull-right {
+    float: right;
+}
+#ulUnLogin{
+	width: 200px;
+}
+.li a{
+	display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+#ulUnLogin li {
+    float: left;
+    /*background-color: #f4be04;*/
+
+    color: white;
+    /*border-radius:10px; */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover span{
+   font-size: 20px;
+}
+
+.menu_nav {
+    float: right;
+    margin: 0;
+    padding: 5px 0 0;
+}
+.logo{
+	margin-top:-52px;
+}
+#logoRight
+{
+	margin-left:200px;
+}
+#ulUnLogin{
+	margin-left: 461px;
+}
+.lg{
+	/*width: 20px;
+	height: 20px;*/
+	background-color: #736483;
+}
+#liCenter{
+	margin: 1px;
+	margin-top:8px;
+	/*background-color: transparent;*/
+}
+#ulUnLogin li {
+    color: initial;
+}
+#test{
+	border: 5px solid #f4be04
+}

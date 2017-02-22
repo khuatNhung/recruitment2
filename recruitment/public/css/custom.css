@@ -1,0 +1,206 @@
+/*******
+	css content
+********/
+.content-wrapper {
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+}
+
+/****************
+  css list and search cv 
+***************/
+.search-cv {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.row-search-second {
+	margin-top: 20px;
+}
+.search-date {
+	height: 25px;
+	width: 90px;
+}
+#skill {
+	height: 25px;
+	width: 90px;
+}
+#experience {
+	height: 25px;
+	width: 90px;
+}
+.input-sm {
+	font-size: 15px;	/*height: 30px;*/
+}
+.modal-header-danger {
+	color: #fff;
+	padding: 9px 15px;
+	border-bottom: 1px solid #eee;
+	background-color: #d9534f;
+}
+.icon {
+	margin-left: 6px;
+}
+
+/*********************
+custom radio button
+********************/
+[type="radio"]:checked, [type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+	color: #000;
+}
+[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	background: #fff;
+}
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: #21DDA2;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-radius: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+input[type="radio"]:checked+label {
+	font-weight: bold;
+}
+.label-radio {
+	font-weight: normal;
+}
+
+/************
+	custom css create cv
+*************/
+hr {
+	border-top: 1px solid #4a88b6;
+}
+.image_cv {
+	height: 25px;
+	width: 90px;
+}
+.image_cv {
+	width: 100px;
+	height: 100px;
+}
+.date-education {
+	height: 30px;
+	width: 90px;
+	border-top: 1px solid #4A88B6;
+}
+.content-new-cv {
+	margin-left: 20px;
+}
+.date-education {
+	height: 30px;
+	width: 106px;
+}
+.image_cv {
+	width: 100px;
+	height: 100px;
+}
+#info1 {
+	margin-top: 20px;
+	margin-left: -12px;
+	padding: 10px 24px;
+}
+.title {
+	margin-top: 0px;
+}
+.insert-row, .delete-row {
+	float: right;
+}
+.date-issue {
+	height: 30px;
+	width: 140px;
+}
+.prize-year {
+	height: 30px;
+	width: 230px;
+}
+.skill-name {
+	width: 110px;
+	height: 30px;
+}
+.margin-row {
+	margin-top: 6px;
+}
+
+/*css recruit*/
+#info1 {
+	margin-top: 20px;
+	margin-left: -12px;
+	padding: 10px 24px;
+}
+.detailImg {
+	height: 150px;
+	width: 144px;
+}
+#addRecruit {
+	float: right;
+	margin-bottom: 30px;
+}
+.glyphicon-search {
+	color: #337ab7;
+}
+
+/*.header {
+	height: 120px;
+	background: #ebebeb;
+	margin: 0px;
+}*/
+.banner {
+	height: 200px;
+	background: #567890;
+}
+.wapper {
+	height: 200px;
+	background: #883779;
+}
+.footer {
+	height: 200px;
+	background: #887928;
+}
+.logotran {
+	margin: 30px;
+}
+.btn-register {
+	margin-top: 10px;
+}
+.margin-col {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.background-white {
+	background: #fefefe;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Luckyr</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="{!!url('public/user/css/style.css')!!}" rel="stylesheet" type="text/css" />
+    <link href="{!!url('public/user/css/custom.css')!!}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{!!url('public/user/css/coin-slider.css')!!}" />
+    <!-- Bootstrap 3.3.6 -->
+    <script src="{!!url('public/admin/bootstrap/js/bootstrap.min.js')!!}"></script>
+    <script src="{!!url('public/user/js/cufon-yui.js')!!}"></script>
+    <script type="text/javascript" src="{!!url('public/user/js/cufon-aller.js')!!}"></script>
+    <script type="text/javascript" src="{!!url('public/user/js/jquery-1.4.2.min.js')!!}"></script>
+    <script type="text/javascript" src="{!!url('public/user/js/script.js')!!}"></script>
+    <script type="text/javascript" src="{!!url('public/user/js/coin-slider.min.js')!!}"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="header_resize">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul id="ulUnLogin" class="list-inline pull-right">
+                  <li class="lg"><a href="javascript:ShowLogin();">Đăng nhập</a></li>
+                  <li id="liCenter"><i>hoặc</i></li>
+                  <li class="lg"><a href="javascript:ShowReg();">Đăng ký</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="menu_nav">
+                  <ul>
+                    <li class="active"><a href="index.html"><span>Home Page</span></a></li>
+                    <li><a href="support.html"><span>Support</span></a></li>
+                    <li><a href="about.html"><span>About Us</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="public/user/images/logotran.png" id="logotran" />
+          </div>
+          <div class="clr"></div>
+          <div class="slider">
+            <div id="coin-slider"> <a href="#"><img src="{!!url('public/user/images/slide1.jpg')!!}" width="970" height="305" alt="" /> </a> <a href="#"><img src="{!!url('public/user/images/slide2.jpg')!!}" width="970" height="305" alt="" /> </a> <a href="#"><img src="{!!url('public/user/images/slide3.jpg')!!}" width="970" height="305" alt="" /> </a> </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_resize">
+          <div class="mainbar">
+            {{--  <div class="article">
+              <h2><span>Excellent Solution</span> For Your Business</h2>
+              <p class="infopost">Posted on <span class="date">11 sep 2018</span> by <a href="#">Admin</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp; <a href="#" class="com">Comments <span>(11)</span></a></p>
+              <div class="clr"></div>
+              <div class="img"><img id="test" src="{!!url('public/user/images/img1.jpg')!!}" width="156" height="221" alt="" class="fl" /></div>
+              <div class="post_content">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. <a href="#">Suspendisse bibendum. Cras id urna.</a> Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
+                <p class="spec"><a href="#" class="rm">Read more</a></p>
+              </div>
+              <div class="clr"></div>
+            </div> --}}
+            @foreach($recruitments as $item)
+            <div class="article">
+              <h2><span>{{$item['title']}}</span></h2>
+              <p class="infopost">Posted on <span class="date">29 aug 2016</span> by <a href="#">Admin</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp; <a href="#" class="com">Comments <span>(7)</span></a></p>
+              <div class="clr"></div>
+              <div class="img"><img src="{!!url('public/user/images/img2.jpg')!!}" width="156" height="221" alt="" class="fl" /></div>
+              <div class="post_content">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. <a href="#">Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</a> Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam.</p>
+                <p class="spec"><a href="#" class="rm">Read more</a></p>
+              </div>
+              <div class="clr"></div>
+            </div>
+            @endforeach
+            <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#"><center>{{$recruitments->render()}}</center></a> <a href="#">&raquo;</a></p>
+            {{-- <center>{{$recruitments->render()}}</center> --}}
+          </div>
+          <div class="sidebar">
+            <div class="searchform">
+              <form id="formsearch" name="formsearch" method="post" action="#">
+                <span>
+                  <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search our ste:" type="text" />
+                </span>
+                <input name="button_search" src="public/user/images/search.gif" class="button_search" type="image" />
+              </form>
+            </div>
+            <div class="clr"></div>
+            <div class="gadget">
+              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=280&amp;wkst=1&amp;bgcolor=%23ffcc00&amp;src=vuongnu1995%40gmail.com&amp;color=%238C500B&amp;ctz=Asia%2FSaigon" style="border:solid 1px #777" width="250" height="280" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="gadget">
+              <h2 class="star"><span>Sponsors</span></h2>
+              <div class="clr"></div>
+              <ul class="ex_menu">
+                <li><a href="#">Lorem ipsum dolor</a><br />
+              Donec libero. Suspendisse bibendum</li>
+              <li><a href="#">Dui pede condimentum</a><br />
+            Phasellus suscipit, leo a pharetra</li>
+            <li><a href="#">Condimentum lorem</a><br />
+          Tellus eleifend magna eget</li>
+          <li><a href="#">Fringilla velit magna</a><br />
+        Curabitur vel urna in tristique</li>
+        <li><a href="#">Suspendisse bibendum</a><br />
+      Cras id urna orbi tincidunt orci ac</li>
+      <li><a href="#">Donec mattis</a><br />
+    purus nec placerat bibendum</li>
+  </ul>
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</div>
+<div class="fbg">
+<div class="fbg_resize">
+<div class="col c1">
+<h2><span>Image</span> Gallery</h2>
+<a href="#">
+<img src="{!!url('public/user/images/gal1.jpg')!!}" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="{!!url('public/user/images/gal2.jpg')!!}" width="75" height="75" alt="" class="gal" />
+</a> <a href="#">
+<img src="{!!url('public/user/images/gal3.jpg')!!}" width="75" height="75" alt="" class="gal" /></a> <a href="#">
+<img src="{!!url('public/user/images/gal4.jpg')!!}" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="{!!url('public/user/images/gal5.jpg')!!}" width="75" height="75" alt="" class="gal" /></a> <a href="#">
+<img src="{!!url('public/user/images/gal6.jpg')!!}" width="75" height="75" alt="" class="gal" /></a> </div>
+<div class="col c2">
+<h2><span>Services</span> Overview</h2>
+<p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
+<ul class="fbg_ul">
+<li><a href="#">Lorem ipsum dolor labore et dolore.</a></li>
+<li><a href="#">Excepteur officia deserunt.</a></li>
+<li><a href="#">Integer tellus ipsum tempor sed.</a></li>
+</ul>
+</div>
+<div class="col c3">
+<h2><span>Contact</span> Us</h2>
+<p>Hãy liên hệ với chúng tôi</p>
+<p class="contact_info"> <span>Address:</span> 3rd Floor, Hoang Ngoc Tower, Plot C2C, Lane 92, Tran Thai Tong Street, Cau Giay District, Ha Noi, Vietnam<br />
+<span>Telephone:</span> (+84) 4 3227 2346<br />
+<span>FAX:</span> +458-4578<br />
+<span>Others:</span> +301 - 0125 - 01258<br />
+<span>E-mail:</span> <a href="#">contact@zinza.com.vn</a> </p>
+</div>
+<div class="clr"></div>
+</div>
+</div>
+<div class="footer">
+<div class="footer_resize">
+<p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+<p class="rf">Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+<div style="clear:both;"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
